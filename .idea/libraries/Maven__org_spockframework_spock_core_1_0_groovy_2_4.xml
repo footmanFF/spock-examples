@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar_source/spock-core-1.0-groovy-2.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
