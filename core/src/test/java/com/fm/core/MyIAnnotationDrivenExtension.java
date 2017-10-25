@@ -1,10 +1,12 @@
 package com.fm.core;
 
+import org.spockframework.runtime.extension.ExtensionAnnotation;
 import org.spockframework.runtime.extension.IAnnotationDrivenExtension;
 import org.spockframework.runtime.model.FeatureInfo;
 import org.spockframework.runtime.model.FieldInfo;
 import org.spockframework.runtime.model.MethodInfo;
 import org.spockframework.runtime.model.SpecInfo;
+import spock.config.ConfigurationObject;
 
 import java.lang.annotation.Annotation;
 

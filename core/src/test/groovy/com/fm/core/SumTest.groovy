@@ -15,6 +15,8 @@ class SumTest extends Specification {
 
     def sum = new Sum()
 
+    def book
+
     @Anno
     def "sum should return param1+param2"() {
         expect:

@@ -8,6 +8,11 @@ import org.spockframework.runtime.model.SpecInfo;
  */
 public class MyIGlobalExtension implements IGlobalExtension {
 
+    /**
+     * 由spock自动注入
+     */
+    private ExtensionConfig config;
+
     @Override
     public void start() {
         System.out.println("start");
