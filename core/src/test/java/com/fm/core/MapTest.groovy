@@ -5,7 +5,7 @@ import spock.lang.Specification
 /**
  * @author footmanff on 2018/11/4.
  */
-class MapTest extends Specification{
+class MapTest extends Specification {
 
     def "map test"() {
         expect:
@@ -14,6 +14,7 @@ class MapTest extends Specification{
         where:
         map                || size
         [1: 2, 2: 1, 3: 1] || 3
+        [:]                || 0
     }
-    
+
 }
