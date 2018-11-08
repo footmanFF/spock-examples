@@ -18,12 +18,6 @@ class SumTest extends Specification {
 
     def book
 
-    @Anno
-    def "sum should return param1+param2"() {
-        expect:
-        sum.sum(1, 1) == 2
-    }
-
     @Unroll
     def "maximum of #a and #b should be #c"() {
         expect:

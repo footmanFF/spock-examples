@@ -12,7 +12,6 @@ class DatabaseDrivenSpec extends Specification {
     @Shared
     sql = Sql.newInstance("jdbc:h2:mem:", "org.h2.Driver")
 
-    // insert data (usually the database would already contain the data)
     def setupSpec() {
         sql.execute("CREATE TABLE maxdata (id INT PRIMARY KEY, a INT, b INT, c INT)")
         sql.execute("INSERT INTO maxdata VALUES (1, 3, 7, 7), (2, 5, 4, 5), (3, 9, 9, 9)")
