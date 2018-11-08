@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spock-examples.iml" filepath="$PROJECT_DIR$/spock-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-spock-examples.iml" filepath="$PROJECT_DIR$/my-spock-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-spock-examples-base/my-spock-examples-base.iml" filepath="$PROJECT_DIR$/my-spock-examples-base/my-spock-examples-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-spock-examples-springmock/my-spock-examples-springmock.iml" filepath="$PROJECT_DIR$/my-spock-examples-springmock/my-spock-examples-springmock.iml" />
     </modules>
   </component>
 </project>

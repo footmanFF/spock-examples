@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core" />
+        <module name="my-spock-examples-base" />
+        <module name="my-spock-examples-springmock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="core" target="1.8" />
-      <module name="spock-examples" target="1.8" />
+      <module name="my-spock-examples" target="1.8" />
+      <module name="my-spock-examples-base" target="1.8" />
+      <module name="my-spock-examples-springmock" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
