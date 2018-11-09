@@ -1,5 +1,6 @@
 package com.fm.springmock
 
+import com.fm.springmock.dao.AnotherService
 import com.fm.springmock.dao.SomeDAO
 import com.fm.springmock.service.SomeService
 import org.springframework.boot.test.context.SpringBootTest
@@ -20,6 +21,9 @@ class BaseTest extends Specification {
     SomeService someService
 
     @Resource
+    AnotherService anotherService
+    
+    @Resource
     SomeDAO someDAO
 
     def "base test"() {
@@ -28,6 +32,7 @@ class BaseTest extends Specification {
         
         when:
         someService.doSome()
+        anotherService.someMethod()
 
         then:
         1 == 1
@@ -37,6 +42,11 @@ class BaseTest extends Specification {
     static class MockConfig {
         def detachedMockFactory = new DetachedMockFactory()
 
+        /**
+         * 会替代 SomeService、anotherService 中的 SomeDAO
+         * 
+         * 并且所有的用例都会生效
+         */
         @Bean
         SomeDAO someDAO() {
             return detachedMockFactory.Mock(SomeDAO)
