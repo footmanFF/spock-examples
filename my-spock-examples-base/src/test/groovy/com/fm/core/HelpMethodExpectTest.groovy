@@ -40,4 +40,22 @@ class HelpMethodExpectTest extends Specification {
         0   || [name: 'footmanff', age: 1]
     }
 
+    def "Name 3"() {
+        expect:
+        List<User> userList = new ArrayList<>()
+        User user = new User()
+        user.setAge(1)
+        user.setName("footmanff")
+        userList.add(user)
+
+        User u = userList.get(row)
+        name == u.getName()
+        age == u.getAge()
+
+        // 此处需要User覆盖equals和hashCode
+        where:
+        row || name        | age
+        0   || "footmanff" | 1
+    }
+
 }
