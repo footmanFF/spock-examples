@@ -37,7 +37,7 @@ class HelpMethodExpectTest extends Specification {
         // 此处需要User覆盖equals和hashCode
         where:
         row || u
-        0   || [name: 'footmanff', age: 1]  
+        0   || [name: 'footmanff', age: 1]
     }
 
 }
