@@ -11,6 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="groovy-metaprogramming-client" target="1.8" />
       <module name="my-spock-examples" target="1.8" />
       <module name="my-spock-examples-base" target="1.8" />
       <module name="my-spock-examples-springmock" target="1.8" />

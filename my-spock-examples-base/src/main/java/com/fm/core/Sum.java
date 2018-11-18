@@ -13,4 +13,8 @@ public class Sum {
         return u1.getAge() + u2.getAge();
     }
 
+    public static void main(String[] args) {
+        
+    }
+
 }
